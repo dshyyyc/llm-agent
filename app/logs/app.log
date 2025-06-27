@@ -1,0 +1,205 @@
+2025-06-26 16:57:27 - [N/A] - root - INFO - 日志系统配置完成，日志文件位于: /Users/yangyuchao/Desktop/llm-agent/app/logs/app.log
+2025-06-26 16:57:32 - [f747e9a8-85c7-4a2b-9855-87f80e1a72ac] - app.agents.chat_agent.chat_agent - INFO -    收到的用户查询 (Query): '你好，这是一个测试'
+2025-06-26 16:57:32 - [f747e9a8-85c7-4a2b-9855-87f80e1a72ac] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 16:57:39 - [f747e9a8-85c7-4a2b-9855-87f80e1a72ac] - app.agents.chat_agent.chat_agent - INFO -   LLM响应 (Result): '你好呀！很高兴见到你~我是一个AI聊天助手，随时准备和你聊天或者解答问题。有什么我可以帮你的吗？😊
+
+(悄悄问一句：这个测试是关于什么的呀？需要我配合什么特别的内容吗？)'
+2025-06-26 16:57:50 - [ac1b74b9-b619-434e-9165-54c4761d55d3] - app.agents.chat_agent.chat_agent - INFO -    收到的用户查询 (Query): '你好，这是一个测试'
+2025-06-26 16:57:50 - [ac1b74b9-b619-434e-9165-54c4761d55d3] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 16:57:52 - [da5383ef-d10f-416d-a85b-ebc7fea9dea6] - app.agents.chat_agent.chat_agent - INFO -    收到的用户查询 (Query): '你好，这是一个测试'
+2025-06-26 16:57:52 - [da5383ef-d10f-416d-a85b-ebc7fea9dea6] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 16:57:59 - [ac1b74b9-b619-434e-9165-54c4761d55d3] - app.agents.chat_agent.chat_agent - INFO -   LLM响应 (Result): '你好呀！很高兴见到你来测试我~有什么想聊的或者需要我帮忙的吗？无论是闲聊、问问题还是测试功能，我都准备好啦！😊
+
+(悄悄问：你是在测试我的反应速度还是对话能力呢？)
+
+PS：作为AI助手，我会尽量保持友好专业的语气，但偶尔也会卖个萌~需要我调整风格随时说哦！'
+2025-06-26 16:57:59 - [da5383ef-d10f-416d-a85b-ebc7fea9dea6] - app.agents.chat_agent.chat_agent - INFO -   LLM响应 (Result): '你好呀！很高兴见到你来测试我~有什么想聊的或者需要我帮忙的吗？无论是闲聊、问问题还是测试我的功能，我都准备好啦！😊
+
+(悄悄说：我最近刚更新了一些新知识，说不定能给你惊喜哦~)'
+2025-06-26 17:09:10 - [N/A] - root - INFO - 日志系统配置完成，日志文件位于: /Users/yangyuchao/Desktop/llm-agent/app/logs/app.log
+2025-06-26 17:10:18 - [647e2f76-1421-42a9-8cb9-68f444cc3c79] - app.api.endpoints.agents - INFO - 收到Router Agent调用请求: conversation_id='', user_input='我想要总结一个文件'
+2025-06-26 17:10:18 - [647e2f76-1421-42a9-8cb9-68f444cc3c79] - app.api.endpoints.agents - INFO - 创建新会话: f631e1c1-3cab-4698-8e7a-7c0ac5b1c9cd
+2025-06-26 17:10:18 - [647e2f76-1421-42a9-8cb9-68f444cc3c79] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 17:10:22 - [647e2f76-1421-42a9-8cb9-68f444cc3c79] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 17:10:26 - [647e2f76-1421-42a9-8cb9-68f444cc3c79] - app.api.endpoints.agents - INFO - 更新并保存会话 f631e1c1-3cab-4698-8e7a-7c0ac5b1c9cd 的状态。
+2025-06-26 17:10:46 - [06449764-9888-4b6e-bc89-7a0773f6d1bf] - app.api.endpoints.agents - INFO - 收到Router Agent调用请求: conversation_id='f631e1c1-3cab-4698-8e7a-7c0ac5b1c9cd', user_input='http://baidu.com'
+2025-06-26 17:10:46 - [06449764-9888-4b6e-bc89-7a0773f6d1bf] - app.api.endpoints.agents - INFO - 加载现有会话: f631e1c1-3cab-4698-8e7a-7c0ac5b1c9cd
+2025-06-26 17:10:46 - [06449764-9888-4b6e-bc89-7a0773f6d1bf] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 17:10:56 - [06449764-9888-4b6e-bc89-7a0773f6d1bf] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 17:11:05 - [06449764-9888-4b6e-bc89-7a0773f6d1bf] - app.api.endpoints.agents - INFO - 更新并保存会话 f631e1c1-3cab-4698-8e7a-7c0ac5b1c9cd 的状态。
+2025-06-26 17:11:15 - [e9c13dbb-4e34-4ed8-88f0-e2b7a4d4a43e] - app.api.endpoints.agents - INFO - 收到Router Agent调用请求: conversation_id='f631e1c1-3cab-4698-8e7a-7c0ac5b1c9cd', user_input='pptx'
+2025-06-26 17:11:15 - [e9c13dbb-4e34-4ed8-88f0-e2b7a4d4a43e] - app.api.endpoints.agents - INFO - 加载现有会话: f631e1c1-3cab-4698-8e7a-7c0ac5b1c9cd
+2025-06-26 17:11:16 - [e9c13dbb-4e34-4ed8-88f0-e2b7a4d4a43e] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 17:11:21 - [e9c13dbb-4e34-4ed8-88f0-e2b7a4d4a43e] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 17:11:29 - [e9c13dbb-4e34-4ed8-88f0-e2b7a4d4a43e] - app.api.endpoints.agents - INFO - 更新并保存会话 f631e1c1-3cab-4698-8e7a-7c0ac5b1c9cd 的状态。
+2025-06-26 17:21:44 - [N/A] - root - INFO - 日志系统配置完成，日志文件位于: /Users/yangyuchao/Desktop/llm-agent/app/logs/app.log
+2025-06-26 17:21:58 - [b3e02afd-cb3c-4283-8d09-ea2dc3ae24c8] - app.api.endpoints.agents - INFO - 收到Router Agent调用请求: conversation_id='', user_input='我要总结内容'
+2025-06-26 17:21:58 - [b3e02afd-cb3c-4283-8d09-ea2dc3ae24c8] - app.api.endpoints.agents - INFO - 创建新会话: eccf7a26-2e2e-434a-b7cf-37dd0e1c71e8
+2025-06-26 17:21:58 - [b3e02afd-cb3c-4283-8d09-ea2dc3ae24c8] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 17:22:02 - [b3e02afd-cb3c-4283-8d09-ea2dc3ae24c8] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 17:22:08 - [b3e02afd-cb3c-4283-8d09-ea2dc3ae24c8] - app.api.endpoints.agents - INFO - 更新并保存会话 eccf7a26-2e2e-434a-b7cf-37dd0e1c71e8 的状态。
+2025-06-26 17:22:26 - [5829ffa5-6ab2-48c5-8d67-cde8a2b2d1ae] - app.api.endpoints.agents - INFO - 收到Router Agent调用请求: conversation_id='eccf7a26-2e2e-434a-b7cf-37dd0e1c71e8', user_input='http://baidu.com'
+2025-06-26 17:22:26 - [5829ffa5-6ab2-48c5-8d67-cde8a2b2d1ae] - app.api.endpoints.agents - INFO - 加载现有会话: eccf7a26-2e2e-434a-b7cf-37dd0e1c71e8
+2025-06-26 17:22:26 - [5829ffa5-6ab2-48c5-8d67-cde8a2b2d1ae] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 17:22:34 - [5829ffa5-6ab2-48c5-8d67-cde8a2b2d1ae] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 17:22:41 - [5829ffa5-6ab2-48c5-8d67-cde8a2b2d1ae] - app.api.endpoints.agents - INFO - 更新并保存会话 eccf7a26-2e2e-434a-b7cf-37dd0e1c71e8 的状态。
+2025-06-26 17:30:59 - [N/A] - root - INFO - 日志系统配置完成，日志文件位于: /Users/yangyuchao/Desktop/llm-agent/app/logs/app.log
+2025-06-26 17:31:28 - [f81a21cb-efc3-4b8d-91a4-8c87c7c995bc] - app.api.endpoints.agents - INFO - 收到Chat Agent调用请求: query='你好'
+2025-06-26 17:31:28 - [f81a21cb-efc3-4b8d-91a4-8c87c7c995bc] - app.agents.chat_agent.chat_agent - INFO -    收到的用户查询 (Query): '你好'
+2025-06-26 17:31:28 - [f81a21cb-efc3-4b8d-91a4-8c87c7c995bc] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 17:31:32 - [f81a21cb-efc3-4b8d-91a4-8c87c7c995bc] - app.agents.chat_agent.chat_agent - INFO -   LLM响应 (Result): '你好呀！😊 很高兴见到你！今天有什么我可以帮你的吗？或者想聊些什么呢？'
+2025-06-26 17:34:25 - [N/A] - root - INFO - 日志系统配置完成，日志文件位于: /Users/yangyuchao/Desktop/llm-agent/app/logs/app.log
+2025-06-26 17:34:45 - [8ea80640-ce9a-44d8-afb3-5e1e737e002f] - app.api.endpoints.agents - INFO - 收到Chat Agent调用请求: conversation_id='', query='你好'
+2025-06-26 17:34:45 - [8ea80640-ce9a-44d8-afb3-5e1e737e002f] - app.api.endpoints.agents - INFO - 为Chat Agent创建新会话: 6dad6695-4ce4-4f44-9ac4-51b63bc44f8c
+2025-06-26 17:34:45 - [8ea80640-ce9a-44d8-afb3-5e1e737e002f] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 收到用户查询: '你好'
+2025-06-26 17:34:46 - [8ea80640-ce9a-44d8-afb3-5e1e737e002f] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 17:34:50 - [8ea80640-ce9a-44d8-afb3-5e1e737e002f] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 生成的回复: '你好！有什么可以帮你的吗？😊'
+2025-06-26 17:34:50 - [8ea80640-ce9a-44d8-afb3-5e1e737e002f] - app.api.endpoints.agents - INFO - 更新并保存Chat会话 6dad6695-4ce4-4f44-9ac4-51b63bc44f8c 的状态。
+2025-06-26 17:35:06 - [4c5ae547-56b0-48b7-9977-3e3c21415011] - app.api.endpoints.agents - INFO - 收到Chat Agent调用请求: conversation_id='6dad6695-4ce4-4f44-9ac4-51b63bc44f8c', query='我是杨宇超'
+2025-06-26 17:35:06 - [4c5ae547-56b0-48b7-9977-3e3c21415011] - app.api.endpoints.agents - INFO - 为Chat Agent加载现有会话: 6dad6695-4ce4-4f44-9ac4-51b63bc44f8c
+2025-06-26 17:35:06 - [4c5ae547-56b0-48b7-9977-3e3c21415011] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 收到用户查询: '我是杨宇超'
+2025-06-26 17:35:06 - [4c5ae547-56b0-48b7-9977-3e3c21415011] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 17:35:10 - [4c5ae547-56b0-48b7-9977-3e3c21415011] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 生成的回复: '你好，杨宇超！很高兴认识你～有什么需要帮忙的吗？😊'
+2025-06-26 17:35:10 - [4c5ae547-56b0-48b7-9977-3e3c21415011] - app.api.endpoints.agents - INFO - 更新并保存Chat会话 6dad6695-4ce4-4f44-9ac4-51b63bc44f8c 的状态。
+2025-06-26 17:35:14 - [2f66bc9f-b7a3-46c1-a957-3cfe4b45bbe2] - app.api.endpoints.agents - INFO - 收到Chat Agent调用请求: conversation_id='6dad6695-4ce4-4f44-9ac4-51b63bc44f8c', query='我是谁'
+2025-06-26 17:35:14 - [2f66bc9f-b7a3-46c1-a957-3cfe4b45bbe2] - app.api.endpoints.agents - INFO - 为Chat Agent加载现有会话: 6dad6695-4ce4-4f44-9ac4-51b63bc44f8c
+2025-06-26 17:35:14 - [2f66bc9f-b7a3-46c1-a957-3cfe4b45bbe2] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 收到用户查询: '我是谁'
+2025-06-26 17:35:15 - [2f66bc9f-b7a3-46c1-a957-3cfe4b45bbe2] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 17:35:20 - [2f66bc9f-b7a3-46c1-a957-3cfe4b45bbe2] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 生成的回复: '你是杨宇超呀！刚刚你告诉我了哦～如果这是假名或者想和我聊其他身份，随时告诉我！ 😄 有什么想聊的或需要帮助的吗？'
+2025-06-26 17:35:20 - [2f66bc9f-b7a3-46c1-a957-3cfe4b45bbe2] - app.api.endpoints.agents - INFO - 更新并保存Chat会话 6dad6695-4ce4-4f44-9ac4-51b63bc44f8c 的状态。
+2025-06-26 17:38:47 - [N/A] - root - INFO - 日志系统配置完成，日志文件位于: /Users/yangyuchao/Desktop/llm-agent/app/logs/app.log
+2025-06-26 17:38:53 - [5eece46c-11ad-4c4c-9f96-f3d04e54f34f] - app.agents.chat_agent.chat_agent - INFO - 处理Chat Agent请求: conversation_id='', query='我是谁'
+2025-06-26 17:38:53 - [5eece46c-11ad-4c4c-9f96-f3d04e54f34f] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 收到用户查询: '我是谁'
+2025-06-26 17:38:54 - [5eece46c-11ad-4c4c-9f96-f3d04e54f34f] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 17:38:59 - [5eece46c-11ad-4c4c-9f96-f3d04e54f34f] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 生成的回复: '你是向我提问的用户！如果你希望我更具体地回答，可以提供一些背景信息或你的名字，我会尽力帮助你。 😊'
+2025-06-26 17:38:59 - [5eece46c-11ad-4c4c-9f96-f3d04e54f34f] - app.agents.chat_agent.chat_agent - INFO - 更新并保存Chat会话 760500d7-41e8-4ebe-bb56-e8a0434f8b7d 的状态。
+2025-06-26 17:39:05 - [dd101182-74c7-40af-bbcc-00545876c7e5] - app.agents.chat_agent.chat_agent - INFO - 处理Chat Agent请求: conversation_id='760500d7-41e8-4ebe-bb56-e8a0434f8b7d', query='我是杨宇超'
+2025-06-26 17:39:05 - [dd101182-74c7-40af-bbcc-00545876c7e5] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 收到用户查询: '我是杨宇超'
+2025-06-26 17:39:05 - [dd101182-74c7-40af-bbcc-00545876c7e5] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 17:39:10 - [dd101182-74c7-40af-bbcc-00545876c7e5] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 生成的回复: '你好，杨宇超！ 😊 很高兴认识你～ 有什么我可以帮你的吗？'
+2025-06-26 17:39:10 - [dd101182-74c7-40af-bbcc-00545876c7e5] - app.agents.chat_agent.chat_agent - INFO - 更新并保存Chat会话 760500d7-41e8-4ebe-bb56-e8a0434f8b7d 的状态。
+2025-06-26 17:39:13 - [e01643b1-97fa-442c-84b5-b3690eb631d2] - app.agents.chat_agent.chat_agent - INFO - 处理Chat Agent请求: conversation_id='760500d7-41e8-4ebe-bb56-e8a0434f8b7d', query='我是谁'
+2025-06-26 17:39:13 - [e01643b1-97fa-442c-84b5-b3690eb631d2] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 收到用户查询: '我是谁'
+2025-06-26 17:39:13 - [e01643b1-97fa-442c-84b5-b3690eb631d2] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 17:39:19 - [e01643b1-97fa-442c-84b5-b3690eb631d2] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 生成的回复: '你是杨宇超！ 😊 这是你刚才告诉我的名字～ 如果还有其他问题或需要帮助的地方，随时告诉我哦！'
+2025-06-26 17:39:19 - [e01643b1-97fa-442c-84b5-b3690eb631d2] - app.agents.chat_agent.chat_agent - INFO - 更新并保存Chat会话 760500d7-41e8-4ebe-bb56-e8a0434f8b7d 的状态。
+2025-06-27 08:53:32 - [N/A] - root - INFO - 日志系统配置完成，日志文件位于: /Users/yangyuchao/Desktop/llm-agent/app/logs/app.log
+2025-06-27 08:54:02 - [79a5ae50-9dd8-43b6-9f7f-237208151940] - app.agents.router_agent.router_agent - INFO - 处理Router Agent请求: conversation_id='', user_input='我要做ppt'
+2025-06-27 08:54:02 - [79a5ae50-9dd8-43b6-9f7f-237208151940] - app.services.information_extraction_service - INFO - 开始从用户对话中提取信息
+2025-06-27 08:54:03 - [79a5ae50-9dd8-43b6-9f7f-237208151940] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-06-27 08:54:03 - [79a5ae50-9dd8-43b6-9f7f-237208151940] - app.services.information_extraction_service - ERROR - 信息提取失败: Failed to deserialize the JSON body into the target type: response_format: This response_format type is unavailable now at line 1 column 882
+2025-06-27 08:54:03 - [79a5ae50-9dd8-43b6-9f7f-237208151940] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 08:54:06 - [79a5ae50-9dd8-43b6-9f7f-237208151940] - app.agents.router_agent.router_agent - INFO - 更新并保存Router会话 de26682b-81a8-4b5c-a228-6fae07fdcbaf 的状态。
+2025-06-27 08:54:24 - [a962c064-d066-4188-9852-7d8b94f65867] - app.agents.router_agent.router_agent - INFO - 处理Router Agent请求: conversation_id='de26682b-81a8-4b5c-a228-6fae07fdcbaf', user_input='http://baidu.com'
+2025-06-27 08:54:24 - [a962c064-d066-4188-9852-7d8b94f65867] - app.services.information_extraction_service - INFO - 开始从用户对话中提取信息
+2025-06-27 08:54:24 - [a962c064-d066-4188-9852-7d8b94f65867] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-06-27 08:54:24 - [a962c064-d066-4188-9852-7d8b94f65867] - app.services.information_extraction_service - ERROR - 信息提取失败: Failed to deserialize the JSON body into the target type: response_format: This response_format type is unavailable now at line 1 column 886
+2025-06-27 08:54:25 - [a962c064-d066-4188-9852-7d8b94f65867] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 08:54:29 - [a962c064-d066-4188-9852-7d8b94f65867] - app.agents.router_agent.router_agent - INFO - 更新并保存Router会话 de26682b-81a8-4b5c-a228-6fae07fdcbaf 的状态。
+2025-06-27 08:54:37 - [8c69adbd-9b9c-47be-980c-91dfe6368ae0] - app.agents.router_agent.router_agent - INFO - 处理Router Agent请求: conversation_id='de26682b-81a8-4b5c-a228-6fae07fdcbaf', user_input='http://baidu.com'
+2025-06-27 08:54:37 - [8c69adbd-9b9c-47be-980c-91dfe6368ae0] - app.services.information_extraction_service - INFO - 开始从用户对话中提取信息
+2025-06-27 08:54:37 - [8c69adbd-9b9c-47be-980c-91dfe6368ae0] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-06-27 08:54:37 - [8c69adbd-9b9c-47be-980c-91dfe6368ae0] - app.services.information_extraction_service - ERROR - 信息提取失败: Failed to deserialize the JSON body into the target type: response_format: This response_format type is unavailable now at line 1 column 886
+2025-06-27 08:54:38 - [8c69adbd-9b9c-47be-980c-91dfe6368ae0] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 08:54:41 - [8c69adbd-9b9c-47be-980c-91dfe6368ae0] - app.agents.router_agent.router_agent - INFO - 更新并保存Router会话 de26682b-81a8-4b5c-a228-6fae07fdcbaf 的状态。
+2025-06-27 08:54:52 - [b2dc16d1-fb45-4a45-9747-51360f94b218] - app.agents.router_agent.router_agent - INFO - 处理Router Agent请求: conversation_id='de26682b-81a8-4b5c-a228-6fae07fdcbaf', user_input='http://baidu.com'
+2025-06-27 08:54:52 - [b2dc16d1-fb45-4a45-9747-51360f94b218] - app.services.information_extraction_service - INFO - 开始从用户对话中提取信息
+2025-06-27 08:54:52 - [b2dc16d1-fb45-4a45-9747-51360f94b218] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-06-27 08:54:52 - [b2dc16d1-fb45-4a45-9747-51360f94b218] - app.services.information_extraction_service - ERROR - 信息提取失败: Failed to deserialize the JSON body into the target type: response_format: This response_format type is unavailable now at line 1 column 886
+2025-06-27 08:54:52 - [b2dc16d1-fb45-4a45-9747-51360f94b218] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 08:54:56 - [b2dc16d1-fb45-4a45-9747-51360f94b218] - app.agents.router_agent.router_agent - INFO - 更新并保存Router会话 de26682b-81a8-4b5c-a228-6fae07fdcbaf 的状态。
+2025-06-27 08:55:02 - [e4d64c49-4e31-4da3-a00d-b62a5f1cc1bd] - app.agents.router_agent.router_agent - INFO - 处理Router Agent请求: conversation_id='de26682b-81a8-4b5c-a228-6fae07fdcbaf', user_input='http://baidu.com/jpg'
+2025-06-27 08:55:02 - [e4d64c49-4e31-4da3-a00d-b62a5f1cc1bd] - app.services.information_extraction_service - INFO - 开始从用户对话中提取信息
+2025-06-27 08:55:02 - [e4d64c49-4e31-4da3-a00d-b62a5f1cc1bd] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-06-27 08:55:02 - [e4d64c49-4e31-4da3-a00d-b62a5f1cc1bd] - app.services.information_extraction_service - ERROR - 信息提取失败: Failed to deserialize the JSON body into the target type: response_format: This response_format type is unavailable now at line 1 column 890
+2025-06-27 08:55:02 - [e4d64c49-4e31-4da3-a00d-b62a5f1cc1bd] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 08:55:06 - [e4d64c49-4e31-4da3-a00d-b62a5f1cc1bd] - app.agents.router_agent.router_agent - INFO - 更新并保存Router会话 de26682b-81a8-4b5c-a228-6fae07fdcbaf 的状态。
+2025-06-27 08:56:58 - [N/A] - root - INFO - 日志系统配置完成，日志文件位于: /Users/yangyuchao/Desktop/llm-agent/app/logs/app.log
+2025-06-27 08:57:15 - [60f36f98-3a4f-46a9-a906-ce1e1f60f3ec] - app.agents.router_agent.router_agent - INFO - 处理Router Agent请求: conversation_id='', user_input='我要做ppt'
+2025-06-27 08:57:15 - [60f36f98-3a4f-46a9-a906-ce1e1f60f3ec] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 08:57:19 - [60f36f98-3a4f-46a9-a906-ce1e1f60f3ec] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 08:57:22 - [60f36f98-3a4f-46a9-a906-ce1e1f60f3ec] - app.agents.router_agent.router_agent - INFO - 更新并保存Router会话 bbb54964-f488-403b-92d9-16947ae1668b 的状态。
+2025-06-27 08:57:29 - [3aab06ca-7b1f-4fbb-9970-02c1a6844a5e] - app.agents.router_agent.router_agent - INFO - 处理Router Agent请求: conversation_id='bbb54964-f488-403b-92d9-16947ae1668b', user_input='http://baidu.com/jpg'
+2025-06-27 08:57:30 - [3aab06ca-7b1f-4fbb-9970-02c1a6844a5e] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 08:57:34 - [3aab06ca-7b1f-4fbb-9970-02c1a6844a5e] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 08:57:38 - [3aab06ca-7b1f-4fbb-9970-02c1a6844a5e] - app.agents.router_agent.router_agent - INFO - 更新并保存Router会话 bbb54964-f488-403b-92d9-16947ae1668b 的状态。
+2025-06-27 08:57:50 - [12bd6271-3e17-4f64-97cd-ae47fa9d39eb] - app.agents.router_agent.router_agent - INFO - 处理Router Agent请求: conversation_id='bbb54964-f488-403b-92d9-16947ae1668b', user_input='pptx'
+2025-06-27 08:57:51 - [12bd6271-3e17-4f64-97cd-ae47fa9d39eb] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 08:57:55 - [12bd6271-3e17-4f64-97cd-ae47fa9d39eb] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 08:58:00 - [12bd6271-3e17-4f64-97cd-ae47fa9d39eb] - app.agents.router_agent.router_agent - INFO - 更新并保存Router会话 bbb54964-f488-403b-92d9-16947ae1668b 的状态。
+2025-06-27 09:03:27 - [46e90c20-bdd8-4e0c-a04c-dfe9689ef57f] - app.agents.router_agent.router_agent - INFO - 处理Router Agent请求: conversation_id='', user_input='帮我写代码'
+2025-06-27 09:03:32 - [46e90c20-bdd8-4e0c-a04c-dfe9689ef57f] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:03:38 - [46e90c20-bdd8-4e0c-a04c-dfe9689ef57f] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:03:42 - [46e90c20-bdd8-4e0c-a04c-dfe9689ef57f] - app.agents.router_agent.router_agent - INFO - 更新并保存Router会话 37b8de57-f2b4-498b-b236-54ff74e90cd7 的状态。
+2025-06-27 09:08:13 - [N/A] - root - INFO - 日志系统配置完成，日志文件位于: /Users/yangyuchao/Desktop/llm-agent/app/logs/app.log
+2025-06-27 09:08:21 - [a1de662c-25aa-4fcc-907a-c45964df4795] - app.agents.router_agent.router_agent - INFO - 处理Router Agent请求: conversation_id='None', user_input='我要做ppt'
+2025-06-27 09:08:22 - [a1de662c-25aa-4fcc-907a-c45964df4795] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:08:25 - [a1de662c-25aa-4fcc-907a-c45964df4795] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:08:29 - [a1de662c-25aa-4fcc-907a-c45964df4795] - app.agents.router_agent.router_agent - INFO - 更新并保存Router会话 381ab8d1-6387-4a6f-87d9-94574d81a666 的状态。
+2025-06-27 09:08:36 - [2cf7a0b8-a9eb-4317-b6fa-d6f5947b515d] - app.agents.router_agent.router_agent - INFO - 处理Router Agent请求: conversation_id='381ab8d1-6387-4a6f-87d9-94574d81a666', user_input='http://baidu.com'
+2025-06-27 09:08:36 - [2cf7a0b8-a9eb-4317-b6fa-d6f5947b515d] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:08:40 - [2cf7a0b8-a9eb-4317-b6fa-d6f5947b515d] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:08:46 - [2cf7a0b8-a9eb-4317-b6fa-d6f5947b515d] - app.agents.router_agent.router_agent - INFO - 更新并保存Router会话 381ab8d1-6387-4a6f-87d9-94574d81a666 的状态。
+2025-06-27 09:08:51 - [4b0209e4-e154-4bc7-936f-17321c18e256] - app.agents.chat_agent.chat_agent - INFO - 处理Chat Agent请求: conversation_id='None', query='你好'
+2025-06-27 09:08:51 - [4b0209e4-e154-4bc7-936f-17321c18e256] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 收到用户查询: '你好'
+2025-06-27 09:08:51 - [4b0209e4-e154-4bc7-936f-17321c18e256] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:08:55 - [4b0209e4-e154-4bc7-936f-17321c18e256] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 生成的回复: '你好！有什么我可以帮你的吗？😊'
+2025-06-27 09:08:55 - [4b0209e4-e154-4bc7-936f-17321c18e256] - app.agents.chat_agent.chat_agent - INFO - 更新并保存Chat会话 e13ee2ad-772f-4d9f-ad10-3dbf8d4466da 的状态。
+2025-06-27 09:09:30 - [N/A] - root - INFO - 日志系统配置完成，日志文件位于: /Users/yangyuchao/Desktop/llm-agent/app/logs/app.log
+2025-06-27 09:09:43 - [03dea943-66e1-4b69-bb69-9d2bf0058764] - app.agents.router_agent.router_agent - INFO - 处理Router Agent请求: conversation_id='', user_input='我要做ppt'
+2025-06-27 09:09:43 - [03dea943-66e1-4b69-bb69-9d2bf0058764] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:09:47 - [03dea943-66e1-4b69-bb69-9d2bf0058764] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:09:50 - [03dea943-66e1-4b69-bb69-9d2bf0058764] - app.agents.router_agent.router_agent - INFO - 更新并保存Router会话 d5321b63-88c0-415e-bc60-af97958f959f 的状态。
+2025-06-27 09:09:57 - [fa063a3b-c0d9-4f34-a04f-646d0731b700] - app.agents.router_agent.router_agent - INFO - 处理Router Agent请求: conversation_id='', user_input='http://baidu.com'
+2025-06-27 09:09:57 - [fa063a3b-c0d9-4f34-a04f-646d0731b700] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:10:01 - [fa063a3b-c0d9-4f34-a04f-646d0731b700] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:10:08 - [fa063a3b-c0d9-4f34-a04f-646d0731b700] - app.agents.router_agent.router_agent - INFO - 更新并保存Router会话 07ba26bf-6f65-495f-bf14-690b64865fa5 的状态。
+2025-06-27 09:10:46 - [fd5f745b-09c9-4d51-be19-af431b930724] - app.agents.chat_agent.chat_agent - INFO - 处理Chat Agent请求: conversation_id='07ba26bf-6f65-495f-bf14-690b64865fa5', query='总结'
+2025-06-27 09:10:46 - [fd5f745b-09c9-4d51-be19-af431b930724] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 收到用户查询: '总结'
+2025-06-27 09:10:46 - [fd5f745b-09c9-4d51-be19-af431b930724] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:10:54 - [fd5f745b-09c9-4d51-be19-af431b930724] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 生成的回复: '您提供的链接是百度（http://baidu.com）的主页，但百度本身是一个搜索引擎，其首页内容主要为搜索框、导航栏及部分功能入口（如新闻、地图、视频等），不包含具体可总结的文本内容。  
+
+若您需要以下帮助，请进一步说明：  
+1. **搜索特定内容**：提供关键词，我可协助整理搜索结果或分析信息。  
+2. **百度某项功能的使用指南**：如百度网盘、百度学术等。  
+3. **其他需求**：例如翻译网页内容、提取搜索结果中的关键信息等。  
+
+期待您的补充说明！ 🌟'
+2025-06-27 09:10:54 - [fd5f745b-09c9-4d51-be19-af431b930724] - app.agents.chat_agent.chat_agent - INFO - 更新并保存Chat会话 07ba26bf-6f65-495f-bf14-690b64865fa5 的状态。
+2025-06-27 09:11:46 - [421722bb-95aa-4691-b644-5674e9bd3720] - app.agents.router_agent.router_agent - INFO - 处理Router Agent请求: conversation_id='', user_input='我要做ppt'
+2025-06-27 09:11:46 - [421722bb-95aa-4691-b644-5674e9bd3720] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:11:49 - [421722bb-95aa-4691-b644-5674e9bd3720] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:11:53 - [421722bb-95aa-4691-b644-5674e9bd3720] - app.agents.router_agent.router_agent - INFO - 更新并保存Router会话 08db09a8-7876-4224-851a-63cbc06c61be 的状态。
+2025-06-27 09:11:58 - [cf235da6-28a0-4757-9a11-5fbd72f731f8] - app.agents.router_agent.router_agent - INFO - 处理Router Agent请求: conversation_id='08db09a8-7876-4224-851a-63cbc06c61be', user_input='www.baidu.com'
+2025-06-27 09:11:59 - [cf235da6-28a0-4757-9a11-5fbd72f731f8] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:12:03 - [cf235da6-28a0-4757-9a11-5fbd72f731f8] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:12:08 - [cf235da6-28a0-4757-9a11-5fbd72f731f8] - app.agents.router_agent.router_agent - INFO - 更新并保存Router会话 08db09a8-7876-4224-851a-63cbc06c61be 的状态。
+2025-06-27 09:12:10 - [ea498fef-180e-439a-8d9e-d25131cf1055] - app.agents.router_agent.router_agent - INFO - 处理Router Agent请求: conversation_id='08db09a8-7876-4224-851a-63cbc06c61be', user_input='pptx'
+2025-06-27 09:12:10 - [ea498fef-180e-439a-8d9e-d25131cf1055] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:12:14 - [ea498fef-180e-439a-8d9e-d25131cf1055] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:12:20 - [ea498fef-180e-439a-8d9e-d25131cf1055] - app.agents.router_agent.router_agent - INFO - 更新并保存Router会话 08db09a8-7876-4224-851a-63cbc06c61be 的状态。
+2025-06-27 09:12:51 - [56ca2a47-42a1-4ad1-8827-d5e8c710755f] - app.agents.chat_agent.chat_agent - INFO - 处理Chat Agent请求: conversation_id='', query='我是杨宇超'
+2025-06-27 09:12:51 - [56ca2a47-42a1-4ad1-8827-d5e8c710755f] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 收到用户查询: '我是杨宇超'
+2025-06-27 09:12:51 - [56ca2a47-42a1-4ad1-8827-d5e8c710755f] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:12:55 - [56ca2a47-42a1-4ad1-8827-d5e8c710755f] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 生成的回复: '你好，杨宇超！请问有什么可以帮你的吗？ 😊'
+2025-06-27 09:12:55 - [56ca2a47-42a1-4ad1-8827-d5e8c710755f] - app.agents.chat_agent.chat_agent - INFO - 更新并保存Chat会话 dfbe2cb0-e761-4314-940d-5ae5a3c6eeeb 的状态。
+2025-06-27 09:13:03 - [3c0f8290-d9aa-4852-be82-97871661e197] - app.agents.chat_agent.chat_agent - INFO - 处理Chat Agent请求: conversation_id='dfbe2cb0-e761-4314-940d-5ae5a3c6eeeb', query='我是谁'
+2025-06-27 09:13:03 - [3c0f8290-d9aa-4852-be82-97871661e197] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 收到用户查询: '我是谁'
+2025-06-27 09:13:04 - [3c0f8290-d9aa-4852-be82-97871661e197] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:13:08 - [3c0f8290-d9aa-4852-be82-97871661e197] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 生成的回复: '你是杨宇超呀！如果还有其他问题或需要帮助的地方，随时告诉我哦~ 😊'
+2025-06-27 09:13:08 - [3c0f8290-d9aa-4852-be82-97871661e197] - app.agents.chat_agent.chat_agent - INFO - 更新并保存Chat会话 dfbe2cb0-e761-4314-940d-5ae5a3c6eeeb 的状态。
+2025-06-27 09:37:37 - [N/A] - root - INFO - 日志系统配置完成，日志文件位于: /Users/yangyuchao/Desktop/llm-agent/app/logs/app.log
+2025-06-27 09:37:48 - [bfe63c3d-f2a5-4cd4-bb7e-7ad5d368bb02] - app.agents.chat_agent.chat_agent - INFO - 处理Chat Agent请求: conversation_id='', query='我是杨宇超'
+2025-06-27 09:37:48 - [bfe63c3d-f2a5-4cd4-bb7e-7ad5d368bb02] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 收到用户查询: '我是杨宇超'
+2025-06-27 09:37:49 - [bfe63c3d-f2a5-4cd4-bb7e-7ad5d368bb02] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:37:54 - [bfe63c3d-f2a5-4cd4-bb7e-7ad5d368bb02] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 生成的回复: '你好，杨宇超！请问有什么可以帮你的吗？'
+2025-06-27 09:37:54 - [bfe63c3d-f2a5-4cd4-bb7e-7ad5d368bb02] - app.agents.chat_agent.chat_agent - INFO - 更新并保存Chat会话 0341b137-0d7e-4776-a3ed-b768673d3363 的状态。
+2025-06-27 09:38:02 - [81dd3c55-55e0-4d8d-b4d0-3590679c547d] - app.agents.chat_agent.chat_agent - INFO - 处理Chat Agent请求: conversation_id='0341b137-0d7e-4776-a3ed-b768673d3363', query='我是谁'
+2025-06-27 09:38:02 - [81dd3c55-55e0-4d8d-b4d0-3590679c547d] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 收到用户查询: '我是谁'
+2025-06-27 09:38:03 - [81dd3c55-55e0-4d8d-b4d0-3590679c547d] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:38:08 - [81dd3c55-55e0-4d8d-b4d0-3590679c547d] - app.agents.chat_agent.chat_agent - INFO - Chat Agent 生成的回复: '你是杨宇超。如果还有其他问题或需要帮助的地方，随时告诉我！'
+2025-06-27 09:38:08 - [81dd3c55-55e0-4d8d-b4d0-3590679c547d] - app.agents.chat_agent.chat_agent - INFO - 更新并保存Chat会话 0341b137-0d7e-4776-a3ed-b768673d3363 的状态。
+2025-06-27 09:38:14 - [5c4ada1b-e059-4bdf-ac4c-ef5cd5ef9440] - app.agents.router_agent.router_agent - INFO - 处理Router Agent请求: conversation_id='0341b137-0d7e-4776-a3ed-b768673d3363', user_input='我是谁'
+2025-06-27 09:38:14 - [5c4ada1b-e059-4bdf-ac4c-ef5cd5ef9440] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:38:18 - [5c4ada1b-e059-4bdf-ac4c-ef5cd5ef9440] - httpx - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 09:38:24 - [5c4ada1b-e059-4bdf-ac4c-ef5cd5ef9440] - app.agents.router_agent.router_agent - INFO - 更新并保存Router会话 a47b8530-7645-450f-84f5-0a62a241d34f 的状态。
