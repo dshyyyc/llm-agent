@@ -2,7 +2,7 @@ import os
 import logging
 from typing import TypedDict, Optional, Annotated
 
-from langchain_core.pydantic_v1 import BaseModel, Field
+from pydantic import BaseModel, Field
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_openai import ChatOpenAI
 from langgraph.graph import StateGraph, END
@@ -27,6 +27,10 @@ class AgentState(TypedDict):
 class Information(BaseModel):
     """从用户对话中提取的信息。"""
 
+    is_relevant: bool = Field(
+        True,
+        description="用户输入是否与文档处理相关（总结、翻译、PPT生成等）。如果用户询问其他无关内容（如写代码、聊天等），应设为False。",
+    )
     input_file_link: Optional[str] = Field(
         None, description="用户提供的输入文件的URL链接。"
     )
@@ -47,7 +51,7 @@ llm = ChatOpenAI(
     temperature=0.7,
 )
 # structured_llm 仅负责从历史对话中提取所需信息，与对话llm是两部分
-structured_llm = llm.with_structured_output(Information)
+structured_llm = llm.with_structured_output(Information, method="function_calling")
 
 
 # --- Agent 节点 ---
@@ -57,6 +61,28 @@ async def agent_node(state: AgentState):
     """
     # 使用异步调用 structured_llm
     extracted_info = await structured_llm.ainvoke(state["messages"])
+
+    # 首先检查用户输入是否与文档处理相关
+    if not extracted_info.is_relevant:
+        response_prompt = """你是一个专门处理文档内容的助手。用户询问的内容与文档处理无关。
+
+        请礼貌地告知用户你只处理文档相关的内容（如文档总结、翻译、PPT生成等），并建议他们：
+        1. 如果是编程相关问题，请使用专门的编程助手
+        2. 如果是其他问题，请使用通用聊天助手
+        3. 如果确实需要文档处理服务，请提供文件链接
+
+        请用友好、专业的语气回复。
+        """
+
+        response = await llm.ainvoke([HumanMessage(content=response_prompt)])
+        ai_message_content = response.content.strip()
+
+        return {
+            "input_file_link": state.get("input_file_link"),
+            "operation_type": state.get("operation_type"),
+            "output_format": state.get("output_format"),
+            "messages": [AIMessage(content=ai_message_content)],
+        }
 
     current_state = state.copy()
     if extracted_info.input_file_link:
